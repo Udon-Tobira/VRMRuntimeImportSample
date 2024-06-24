@@ -38,8 +38,9 @@ VRMをエディター時と、ゲーム時の両方でインポートできる�
     そしたら揃う  
     ![342349803-5245e991-68ea-4753-85e1-a87523d44280](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/236aa881-5a3c-470f-97fe-9d5c6b63db9d)
     </details>
-4. 右下の Asset Browser から好きなアニメーション（例：MF_Walk_Fwd）をダブルクリックするとプレビューできる。うまく動けばこれはOK。うまく動かなければ、いろいろ調べて直してね＾＾；  
-![342350048-5f67f729-99b3-4e2d-9676-c776cf3f4e28](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/c8a69f1d-59da-40c7-bf00-5c1cddc5d842)
+4. 右下の Asset Browser から好きなアニメーション（例：MF_Run_Fwd）をダブルクリックするとプレビューできる。うまく動けばこれはOK。うまく動かなければ、いろいろ調べて直してね＾＾；  
+![342350048-5f67f729-99b3-4e2d-9676-c776cf3f4e28](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/c8a69f1d-59da-40c7-bf00-5c1cddc5d842)  
+[結果の動画](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/6b76c94b-3910-46c1-9771-2531a7185dec)
 5. 流用したいアニメーションブループリント（今回の場合、ABP_Manny）の上で右クリックし、Retarget Animations を押す。  
 ![342350802-b7c9f1bf-ad6e-49b9-97e0-12969d9be96e](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/803c0cbd-5c98-4217-950e-6e0dc0205f7f)
 6. Target Skeletal Mesh にインポートしたモデルのスケルタルメッシュを設定。    
@@ -52,12 +53,14 @@ Retarget Asset に RTG_Mannequin をセットする。
 ![342351157-bd6689b3-ce21-4895-aa61-66b78e90d276](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/1dbb9a00-c741-4bf9-ba0e-546024912e2f)  
 ![342351198-93d425b1-6ce5-4c5a-ac35-8fdce58f73a5](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/d38aa06e-aa2c-43f9-921a-36d19b8143af)
 9. BP_ThirdPersonCharacter を開き、Details ウィンドウの、Animation > Anim Class にエクスポートしたアニメーションブループリントを設定。実行するとちゃんと動く。
-
+[結果の動画](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/d4c29060-6579-4978-bd3f-481bf9dc38b4)
 
 ### ジャンプ後の着地時に起こる異常の修正
 
 - 上記の設定で実行してジャンプして着地すると、着地時に異常な表示が起こり、また、ゲーム終了時に「Trying to play a non-additive animation 'MM_Land_Aneki' into a pose that is expected to be additive in anim instance 'ABP_Aneki_C /Game/UEDPIE_0_Lobby.Lobby:PersistentLevel.BP_ThirdPersonCharacter_C_0.CharacterMesh0.ABP_Aneki_C_0’」のような警告が出る。
 - これは、IK Retargeter のアニメーションエクスポート時に、アニメーションの Additive Settings が反映されないというバグらしい。ということで、この項目のみ手動で設定すればOK
+[ジャンプと着地の動画](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/c148c8de-16c4-44eb-9828-bda1d6612d65)
+
 1. 対象アニメーションの元ファイル(今回は、着地時のアニメーション MM_Land)を開く
 2. エクスポート先アニメーションのファイル(今回は、MM_Land_Aneki)を開き、Additive Settings を 1. で開いたファイルと同じ状態にする。すると、治る。  
 ![342351382-6bdbd2a4-7ecb-4ba8-bb4d-79c2f719611b](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/84c1f1c1-5e26-439a-9f54-8b922367be99)
