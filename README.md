@@ -5,6 +5,7 @@ VRMをエディター時と、ゲーム時の両方でインポートできる�
 
 
 ## エディター使用時にインポートして、操作可能なサードパーソンキャラクターとして設定する方法
+以下の説明や、本プロジェクトにインポートされているキャラクターのVRMファイルは、[VRM Model "Aneki"](https://booth.pm/ja/items/3257189) を使わせていただいております。
 
 ### メッシュのインポート
 1. プロジェクトをサードパーソンテンプレートで作成するか、以下必要なものを随時移行してくる。
@@ -16,7 +17,7 @@ VRMをエディター時と、ゲーム時の両方でインポートできる�
 ![Untitled](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/f2537002-c054-4177-85b4-5574249743e9)
 5. BP_ThirdPersonCharacter を開き、Details ウィンドウの、Mesh > Skeletal Mesh Asset にインポートしたスケルタルメッシュを設定。
 6. これで起動すると、そのキャラで動かせるが、アニメーションを適切に設定していないので、T字のまま平行移動することになる。以降でアニメーションの設定をしていく。  
-https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/965cc6d7-c431-4830-b94f-eb31f55dcde8
+[平行移動している様子の動画](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/965cc6d7-c431-4830-b94f-eb31f55dcde8)
 
 ### アニメーションのリターゲティング
 - 特定のスケルタルメッシュ用に作られたアニメーションを、別のスケルタルメッシュに適用することを「リターゲティング」という。
