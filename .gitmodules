@@ -1,0 +1,3 @@
+[submodule "Plugins/VRM4U"]
+	path = Plugins/VRM4U
+	url = https://github.com/ruyo/VRM4U.git
