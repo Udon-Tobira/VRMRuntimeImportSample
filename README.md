@@ -66,6 +66,7 @@ Retarget Asset に RTG_Mannequin をセットする。
 ![342351382-6bdbd2a4-7ecb-4ba8-bb4d-79c2f719611b](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/84c1f1c1-5e26-439a-9f54-8b922367be99)
 
 ### 動いているときに地面に影が残る問題の修正
+[動いているときに地面に影が残っている動画](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/73d6d1f0-8f27-497f-b648-b4557b39beb2)
 
 1. BP_ThirdPersonCharacter を開く
 2. Components ウィンドウから Mesh (CharacterMesh0) をクリック
