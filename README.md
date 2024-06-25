@@ -65,3 +65,8 @@ Retarget Asset に RTG_Mannequin をセットする。
 2. エクスポート先アニメーションのファイル(今回は、MM_Land_Aneki)を開き、Additive Settings を 1. で開いたファイルと同じ状態にする。すると、治る。  
 ![342351382-6bdbd2a4-7ecb-4ba8-bb4d-79c2f719611b](https://github.com/Udon-Tobira/VRMImportSample/assets/146440502/84c1f1c1-5e26-439a-9f54-8b922367be99)
 
+### 動いているときに地面に影が残る問題の修正
+
+1. BP_ThirdPersonCharacter を開く
+2. Components ウィンドウから Mesh (CharacterMesh0) をクリック
+3. Details ウィンドウで Rendering > Bounds Scale の値を適切に大きくすると治る(このキャラクターの場合は3.5で治った)
