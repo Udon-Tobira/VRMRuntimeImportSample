@@ -1,4 +1,4 @@
-# VRMImportSample
+# VRMRuntimeImportPluginSample
 
 VRMをエディター時と、ゲーム時の両方でインポートできるようにするサンプルプロジェクト。  
 [VRM4Uプラグイン](https://ruyo.github.io/VRM4U/01_quick-start/)を使用しています。  
