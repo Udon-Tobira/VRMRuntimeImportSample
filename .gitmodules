@@ -1,6 +1,3 @@
-[submodule "Plugins/VRM4U"]
-	path = Plugins/VRM4U
-	url = https://github.com/ruyo/VRM4U.git
 [submodule "Plugins/VRMRuntimeImportPlugin"]
 	path = Plugins/VRMRuntimeImportPlugin
 	url = https://github.com/Udon-Tobira/VRMRuntimeImportPlugin.git
